@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=beyond0lte
+export DEVICE=m62
 export DEVICE_COMMON=exynos9820-common
 export VENDOR=samsung
 

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,15 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-## Product API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
-## Inherit from beyond0lte device
-$(call inherit-product, device/samsung/beyond0lte/device.mk)
+## Inherit from m62 device
+$(call inherit-product, device/samsung/m62/device.mk)
 
 ## Boot Animation
 TARGET_BOOTANIMATION_HALF_RES := true
-TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 ## Inherit some common Lineage stuff
@@ -37,10 +34,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_beyond0lte
-PRODUCT_DEVICE := beyond0lte
+PRODUCT_NAME := lineage_m62
+PRODUCT_DEVICE := m62
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G970F
+PRODUCT_MODEL := SM-M625F
 PRODUCT_MANUFACTURER := samsung
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung

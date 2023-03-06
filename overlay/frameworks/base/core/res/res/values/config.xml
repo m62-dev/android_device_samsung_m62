@@ -41,7 +41,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -149 V 116 H 0 V 0 Z @right</string>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -62 V 92 H 62 V 0 H 0 Z</string>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps">true</bool>

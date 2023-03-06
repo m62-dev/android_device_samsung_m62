@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_beyond0lte.mk
+    $(LOCAL_DIR)/lineage_m62.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_beyond0lte-eng \
-    lineage_beyond0lte-user \
-    lineage_beyond0lte-userdebug
+    lineage_m62-eng \
+    lineage_m62-user \
+    lineage_m62-userdebug

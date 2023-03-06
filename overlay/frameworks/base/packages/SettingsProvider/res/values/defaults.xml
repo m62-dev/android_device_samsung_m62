@@ -18,5 +18,5 @@
 -->
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">Galaxy S10e</string>
+    <string name="def_device_name_simple">Galaxy M62</string>
 </resources>

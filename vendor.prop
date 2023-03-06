@@ -1,5 +1,5 @@
 ## Bluetooth
-bluetooth.device.default_name=Galaxy S10e
+bluetooth.device.default_name=Galaxy M62
 
 ## RIL
 ro.telephony.default_network=9,9

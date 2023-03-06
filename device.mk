@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,13 @@
 # limitations under the License.
 #
 
+TARGET_BOARD_PLATFORM := universal9825-r
+
 # Inherit from the common tree
 $(call inherit-product, device/samsung/exynos9820-common/common.mk)
 
 # Inherit proprietary files
-$(call inherit-product, vendor/samsung/beyond0lte/beyond0lte-vendor.mk)
+$(call inherit-product, vendor/samsung/m62/m62-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
