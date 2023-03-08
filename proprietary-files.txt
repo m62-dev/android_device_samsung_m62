@@ -1,4 +1,4 @@
-# Proprietary files - from Samsung package version G970FXXSGHWA3, unless pinned
+# Proprietary files - from Samsung package version M625FXXS3CWB3, unless pinned
 
 ## Audio
 vendor/etc/dolby/dax-default.xml
@@ -7,8 +7,9 @@ vendor/etc/mixer_gains.xml
 vendor/etc/mixer_paths.xml
 -vendor/lib/libaudioproxy.so
 -vendor/lib/librecordalive.so
+-vendor/lib/libspatializerparamstorage.so
 -vendor/lib/lib_SamsungRec_07010.so
--vendor/lib/hw/audio.primary.exynos9820.so
+-vendor/lib/hw/audio.primary.exynos9825.so
 -vendor/lib/soundfx/libaudioeffectoffload.so
 -vendor/lib/soundfx/libswdap.so
 -vendor/lib64/soundfx/libaudioeffectoffload.so
@@ -21,6 +22,7 @@ vendor/firmware/APSV_AUDIO_SLSI.bin
 vendor/firmware/APTV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/a2dpcom.bin
 vendor/firmware/calliope_dram_2.bin
 vendor/firmware/calliope2.dt
 vendor/firmware/calliope_sram_2.bin
@@ -29,15 +31,16 @@ vendor/firmware/calliope_dram.bin
 vendor/firmware/dax_param.bin
 
 ## Bluetooth Firmware
-vendor/firmware/bcm4375B0_murata.hcd
-vendor/firmware/bcm4375B0_semco.hcd
 vendor/firmware/bcm4375B1_murata.hcd
 vendor/firmware/bcm4375B1_semco.hcd
 vendor/firmware/bcm4375B1_semco_sem.hcd
 
-## Camera - from beyond0lte - G970FXXSEGVA9
--vendor/lib64/hw/camera.exynos9820.so|4f8e859bdc37ce8829df48d369ec99e38ae84a3d
--vendor/lib64/libexynoscamera3.so|8a6bb66b1eecf3da5e5462ee8d4534389ca546c0
+## Camera
+-vendor/lib64/hw/camera.exynos9825.so
+-vendor/lib64/libexynoscamera3.so
+
+## Camera Dependencies - from beyond1lte - G973FXXSGHWA3
+-vendor/lib64/libexynosgraphicbuffer.so|3f153213ad826fe197544c2deda0cb52b9db7c44
 
 ## Camera Firmware
 vendor/firmware/fimc_is_fw_mcu.bin
@@ -58,41 +61,41 @@ vendor/firmware/bidirmic.bin
 vendor/firmware/cs35l40-bot-dsp1-spk-prot-calib.bin
 vendor/firmware/cs35l40-bot-dsp1-spk-prot.bin
 vendor/firmware/cs35l40-bot-dsp1-spk-prot.wmfw
-vendor/firmware/cs35l40-rcv-dsp1-spk-prot-calib.bin
-vendor/firmware/cs35l40-rcv-dsp1-spk-prot.bin
-vendor/firmware/cs35l40-rcv-dsp1-spk-prot.wmfw
-vendor/firmware/dnn.bin
+vendor/firmware/dual_cal_wide_sub.bin
 vendor/firmware/dual_cal_wide_swide.bin
-vendor/firmware/dual_cal_wide_tele.bin
 vendor/firmware/fmsb.bin
+vendor/firmware/listenbackeffect.bin
 vendor/firmware/rxse.bin
-vendor/firmware/setfile_2l4.bin
-vendor/firmware/setfile_3j1.bin
-vendor/firmware/setfile_3m3.bin
-vendor/firmware/setfile_3p9.bin
-vendor/firmware/setfile_4ha.bin
+vendor/firmware/setfile_3l6.bin
+vendor/firmware/setfile_gc5035.bin
+vendor/firmware/setfile_gc5035_macro.bin
+vendor/firmware/setfile_imx616.bin
+vendor/firmware/setfile_imx682.bin
+vendor/firmware/sv.bin
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 vendor/firmware/txse3.bin
 vendor/firmware/vts.bin
 
 ## Gatekeeper
--vendor/lib/hw/gatekeeper.exynos9820.so
--vendor/lib64/hw/gatekeeper.exynos9820.so
+-vendor/lib/hw/gatekeeper.exynos9825.so
+-vendor/lib64/hw/gatekeeper.exynos9825.so
 
 ## GPS
 -vendor/bin/hw/gpsd
--vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+-vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
 vendor/etc/gnss/gps.xml
 vendor/etc/init/init.gps.rc
-vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc
 -vendor/lib64/libwrappergps.so
--vendor/lib64/hw/android.hardware.gnss@2.0-impl.so
+-vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
 -vendor/lib64/hw/gps.default.so
--vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
+-vendor/lib64/vendor.samsung.hardware.gnss@2.1.so
+-vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so
 
 ## NFC
-vendor/firmware/nfc/sec_s3nrn82_firmware.bin
+vendor/etc/libnfc-sec-vendor.conf
+vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
 ## RIL
 vendor/etc/plmn_se13.bin
@@ -105,9 +108,7 @@ vendor/etc/init/init.baseband.rc
 ## Sensors
 -vendor/bin/hw/lhd
 vendor/etc/sensor/lhd.conf
--vendor/lib/sensors.bio.so
 -vendor/lib/sensors.sensorhub.so
--vendor/lib64/sensors.bio.so
 -vendor/lib64/sensors.sensorhub.so
 
 ## TEEGRIS Firmware
@@ -116,14 +117,10 @@ vendor/tee/00000000-0000-0000-0000-0053545354ab
 vendor/tee/00000000-0000-0000-0000-46494e474552
 vendor/tee/00000000-0000-0000-0000-4b45594d5354
 vendor/tee/00000000-0000-0000-0000-505256544545
-vendor/tee/00000000-0000-0000-0000-657365447276
+vendor/tee/00000000-0000-0000-0000-6b6e78677564
 vendor/tee/driver/00000000-0000-0000-0000-53626f786476
 
 ## Wi-Fi
 vendor/firmware/bcmdhd_clm.blob
-vendor/firmware/nvram.txt_1rh_es11_b0
-vendor/firmware/nvram.txt_1rh_es12_b0
-vendor/firmware/nvram.txt_1rh_es13_b0
 vendor/firmware/nvram.txt_1rh_es43_b1
 vendor/firmware/nvram.txt_CS01_semco_b1
-vendor/firmware/nvram.txt_ES03_semco_b0
