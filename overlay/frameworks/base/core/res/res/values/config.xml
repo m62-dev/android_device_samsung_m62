@@ -65,4 +65,8 @@
         <item>265</item> <!--item>sensorLocationY</item-->
         <item>250</item> <!--item>sensorRadius</item-->
     </array>
+
+    <!-- The type of the light sensor to be used by the display framework for things like
+         auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
+    <string name="config_displayLightSensorType">android.sensor.light</string>
 </resources>
